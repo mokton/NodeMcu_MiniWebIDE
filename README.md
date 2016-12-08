@@ -29,4 +29,4 @@ Examples:
 	
   5.Remove the specified script file
 	
-    http://mcu_ip/newfile.lua??remove
+    http://mcu_ip/newfile.lua?remove
