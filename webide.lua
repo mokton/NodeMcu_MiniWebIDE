@@ -156,7 +156,7 @@ return function (port)
                     --print('send',k,v)
                     filecount=filecount+1
                     --buff=buff.."<a href='"..k.."?edit'>"..k.."</a>, size:"..v.."<br>"
-                    buff=buff.."<tr><td>"..k.."</td><td>"..v.."k</td><td><input type=\"button\" value=\"Edit\"  onclick=\"window.location.href='"..k.."?edit'\" /></td>"
+                    buff=buff.."<tr><td>"..k.."</td><td>"..v.."</td><td><input type=\"button\" value=\"Edit\"  onclick=\"window.location.href='"..k.."?edit'\" /></td>"
                     buff=buff.."<td><input type='button' value='Run' onclick=\"tag('Running');x.open('GET','/"..k.."?run',true);\nx.onreadystatechange=function(){if(x.readyState==4) tag(x.responseText);};\nx.send();\" /></td>"
                     buff=buff.."<td><input type='button' value='Remove' onclick=\"tag('Running');x.open('GET','/"..k.."?remove',true);\nx.onreadystatechange=function(){if(x.readyState==4) tag(x.responseText);};\nx.send();\" /></td></tr>"
                     c:send(buff)
@@ -200,7 +200,7 @@ return function (port)
                 if count==filecount+1 then
                     --print('sent',k,v)
                     filecount=filecount+1
-                    buff=buff.."<tr><td>"..k.."</td><td>"..v.."k</td><td><input type=\"button\" value=\"Edit\"  onclick=\"window.location.href='"..k.."?edit'\" /></td>"
+                    buff=buff.."<tr><td>"..k.."</td><td>"..v.."</td><td><input type=\"button\" value=\"Edit\"  onclick=\"window.location.href='"..k.."?edit'\" /></td>"
                     buff=buff.."<td><input type='button' value='Run' onclick=\"tag('Running');x.open('GET','/"..k.."?run',true);\nx.onreadystatechange=function(){if(x.readyState==4) tag(x.responseText);};\nx.send();\" /></td>"
                     buff=buff.."<td><input type='button' value='Remove' onclick=\"tag('Running');x.open('GET','/"..k.."?remove',true);\nx.onreadystatechange=function(){if(x.readyState==4) tag(x.responseText);};\nx.send();\" /></td></tr>"
                     c:send(buff)
